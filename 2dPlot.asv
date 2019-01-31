@@ -1,0 +1,14 @@
+plotData(dataset);
+
+function plotData(Data) 
+  hold
+  for i=1:height(Data(:,1)) 
+    if (string(Data{i,5}) == "Setosa") 
+        plot(double(Data{i,1}),double(Data{i,2}),'bo'); %mark 'label 0' samples with 'o'
+    elseif (string(Data{i,5}) == "Versicolor") 
+        plot(double(Data{i,1}),double(Data{i,2}),'b*'); %mark 'label 1' samples as '*'
+    else
+        plot(double(Data{i,1}),double(Data{i,2}),'b+'); %mark 'label 1' samples as '!'
+    end
+  end
+end
