@@ -1,0 +1,2 @@
+XORinputT = XORinput';
+XORtargetsT = XORtargets';
